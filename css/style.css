@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --primaryBG: #000;
+  --primaryYellow: #ecdc49;
+  --primaryWhite: #fff;
+}
+body {
+  font-family: "Merriweather", Georgia, serif;
+  background-color: var(--primaryBG);
+}
+.main {
+  margin: auto;
+  width: 750px;
+  border: solid 3px var(--primaryYellow);
+  border-radius: 5px;
+  padding-top: 5%;
+  height: 450px;
+  background: none;
+}
+.text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--primaryWhite);
+  padding: 40px;
+  font-size: 2em;
+animation: text 2s linear infinite;
+}
+.logo {
+  font-size: 20em;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: var(--primaryYellow);
+  display: block;
+  text-align: center;
+  animation: myLogo 3s infinite;
+}
+
+.big-text {
+  font-size: 4em;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: var(--primaryYellow);
+  display: block;
+  text-align: center;
+  animation: myText 2s 1s infinite;
+}
+
+
+@keyframes myLogo {
+  0% {
+    color: var(--primaryYellow);
+    transform: rotate(0deg);
+  }
+  100% {
+    color: var(--primaryYellow);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes myText {
+  0% {
+    transform: scale(0.2);
+  }
+  50% {
+    transform: scale(1.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
